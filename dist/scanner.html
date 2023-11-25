@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="animate.css" />
 	<link rel="stylesheet" href="apexcharts.css" />
 	<link rel="stylesheet" href="tailwind.css" />
+	<link rel="stylesheet" href="scanner.css">
 </head>
 <body>
     <header x-data="
@@ -55,9 +56,13 @@
     <section>
 		<section id="home" class="af a2E a3p a3q">
 			<div style="display: grid; place-items: center;">
-                <img style="outline: 1.5em solid white; border-radius: 25px; height: 100%; aspect-ratio: 1;" src="./images/scanner/qr1.png" alt="scanner">
+                <!-- <img style=" height: 100%; aspect-ratio: 1;" src="./images/scanner/qr1.png" alt="scanner"> -->
                 
-                <span id="team-name" style="padding-top: 3px;">TEAM NAME</span>
+                <span id="team-name" > Thank you for voting  </span>
+				
+				<button  >View Leaderboard</button>
+
+				
             </div>
             
             
@@ -76,6 +81,12 @@
             <img src="images/shapes/hero-shape-2.svg" alt="" class="aq a19 a8 a2Z" />
         </div>
 	</section>
-
+	<script>
+		let button=document.querySelector("button")
+		button.addEventListener("click",()=>{
+    	console.log("hello")
+    	window.location.replace("http://www.w3schools.com");
+		})
+	</script>
 </body>
 </html>
