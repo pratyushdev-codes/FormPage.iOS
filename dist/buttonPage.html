@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="glightbox.min.css" />
+	<link rel="stylesheet" href="animate.css" />
+	<link rel="stylesheet" href="apexcharts.css" />
+	<link rel="stylesheet" href="tailwind.css" />
+</head>
+</head>
+<body class=" bg-gradient-to-b from-[#080321] to-[#121a4b]">
+    <header x-data="
+        {
+          navbarOpen: false,
+          dropdownOpen: false
+        }
+      " :class="scrolledFromTop ? 'a1 dark:a3 a4 dark:a4 a5 a6 ' : ' a7 dark:a7' " class="a8 a9 aa ab ac ad">
+		<!-- <div class="ae">
+			<div class="af ag aa ac ah">
+				<div class="ai aj ak">
+					<a href="#home" :class="scrolledFromTop && '!al lg:!am' " class="an ab a2h lg:aW">
+						<img src="./images/logo/clublogoblack.png" alt="logo" class="ab dark:ao" />
+						<img src="./images/logo/clublogo.png" alt="logo" class="ao ab dark:an" />
+					</a>
+				</div>
+				<div class="aa ab ac ap ak">
+				
+					<div class="aa ap a1l lg:a1m xl:a1n 2xl:a1o">
+						<div class="a1p">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="w-[100%] ">
+			<img src="./images/logo/clublogo.png" alt="logo" class="sm:ml-[1.5rem] lg:ml-[5rem]">
+		</div>
+	</header>
+
+    <section>
+		<section id="home" class="af a2E a3p a3q">
+			<div class="bg-gradient-to-r from-blue-800 to-blue-400 sm:mx-[8rem] md:mx-8 lg:mx-auto lg:w-[50%] p-11 rounded-xl sm:w-auto border-white border-2 text-white flex lg:space-x-4 flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0">
+                    <button class="bg-[#264177] w-[60%] rounded-lg h-[2rem] text-white hover:bg-[#3d5992] ease-in-out duration-200 border-white border-2" id="round1">ROUND 2</button>
+                    <button class="bg-[#264177] w-[60%] rounded-lg h-[2rem] text-white hover:bg-[#3d5992] ease-in-out duration-200 border-white border-2" id="round2">ROUND 3</button>
+	
+			</div>>
+			</div>
+			<!-- <div class="aq a8 a1a a2Z a2w ab a3D" style="
+					background-image: linear-gradient(
+						180deg,
+						#3e7dff 0%,
+						rgba(62, 125, 255, 0) 100%
+					);
+				"></div> -->
+		</section>
+		<img src="images/shapes/hero-shape-1.svg" alt="" class="aq a1a a8 a2Z" />
+		<img src="images/shapes/hero-shape-2.svg" alt="" class="aq a19 a8 a2Z" />
+	</section>
+</body>
+<script>
+    const round1 = document.getElementById('round1');
+    const round2 = document.getElementById('round2');
+    round1.addEventListener('click', () => {
+        window.location.href = 'https://www.google.com/';
+    });
+    round2.addEventListener('click', () => {
+        window.location.href = 'https://www.google.com/';
+    });
+</script>
+</html>
