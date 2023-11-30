@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="glightbox.min.css" />
-	<link rel="stylesheet" href="animate.css" />
-	<link rel="stylesheet" href="apexcharts.css" />
-	<link rel="stylesheet" href="tailwind.css" />
+    
+	<link rel="stylesheet" href="style.css" />
 </head>
-<body class=" bg-gradient-to-b from-[#080321] to-[#121a4b]">
+<body>
     <header x-data="
         {
           navbarOpen: false,
           dropdownOpen: false
         }
-      " :class="scrolledFromTop ? 'a1 dark:a3 a4 dark:a4 a5 a6 ' : ' a7 dark:a7' " class="a8 a9 aa ab ac ad">
+      " >
 		<!-- <div class="ae">
 			<div class="af ag aa ac ah">
 				<div class="ai aj ak">
@@ -35,17 +32,25 @@
 			</div>
 		</div> -->
 		<div class="w-[100%] ">
-			<img src="./images/logo/clublogo.png" alt="logo" class="sm:ml-[1.5rem] lg:ml-[5rem]">
+			<img src="./images/logo/clublogo.png" alt="logo" class="logo">
 		</div>
 	</header>
 
     <section>
-		<section id="home" class="af a2E a3p a3q">
-			<div class="bg-gradient-to-r from-blue-800 to-blue-400 sm:mx-[8rem] md:mx-8 lg:mx-auto space-y-8 lg:w-[50%] p-[1.5rem] rounded-xl sm:w-auto border-white border-2 text-white">
-				<p class=" text-lg text-white font-bold" style ="text-align: center;">VOTE FOR YOUR FAVOURITE TEAM</p>
-				<form action="get" class="form-section space-y-8 mx-[4rem] " >
+		<section id="home">
+			<div class="form-div">
+				<p>VOTE FOR YOUR FAVOURITE TEAM</p>
+				<form action="get" class="form-section space-y-8  " >
 					<!-- <label for="vote" class="text-lg text-white font-bold ">VOTE FOR YOUR FAVOURITE TEAM</label>  -->
-					<br>
+					<input type="radio" name="votedTeam" id="team-A" value="TEAM_A">
+					<label for="team-A">TEAM A</label> <br>
+					<input type="radio" name="votedTeam" id="team-B" value="TEAM_B">
+					<label for="team-B">TEAM B</label> <br>
+					<input type="radio" name="votedTeam" id="team-C" value="TEAM_C">
+					<label for="team-C">TEAM C</label> <br>
+					<input type="radio" name="votedTeam" id="team-D" value="TEAM_D">
+					<label for="team-D">TEAM D</label> <br>
+
 					<input type="radio" name="votedTeam" id="team-A" value="TEAM_A">
 					<label for="team-A">TEAM A</label> <br>
 					<input type="radio" name="votedTeam" id="team-B" value="TEAM_B">
@@ -62,9 +67,10 @@
 					<label for="team-C">TEAM C</label> <br>
 					<input type="radio" name="votedTeam" id="team-D" value="TEAM_D">
 					<label for="team-D">TEAM D</label> <br>
-	
-					<div class="flex space-x-4">
-						<button class="bg-[#264177] w-[60%] rounded-lg h-[2rem] text-white hover:bg-[#3d5992] ease-in-out duration-200 border-white border-2">SUBMIT</button>
+
+
+					<div>
+						<button class="submit-btn">SUBMIT</button>
 						
 					</div>
 				</form>
@@ -78,8 +84,8 @@
 					);
 				"></div> -->
 		</section>
-		<img src="images/shapes/hero-shape-1.svg" alt="" class="aq a1a a8 a2Z" />
-		<img src="images/shapes/hero-shape-2.svg" alt="" class="aq a19 a8 a2Z" />
+		<img src="images/shapes/hero-shape-1.svg" alt="" class="sec-bg-img1" />
+		<img src="images/shapes/hero-shape-2.svg" alt="" class="sec-bg-img2" />
 	</section>
 </body>
 </html>
